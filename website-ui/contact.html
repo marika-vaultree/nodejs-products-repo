@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <script src="list.js" async></script>
+</head>
+
+<body>
+    <!--Naigation bar with links to other pages-->
+    <div>
+        <nav id="nav-bar-container">
+            <div class="nav-buttons">
+                <a class="nav-list-link" href="/index">Index</a>
+            </div>
+            <div class="nav-buttons">
+                <a class="nav-list-link" href="/about">About Us</a>
+            </div>
+            <div class="nav-buttons">
+                <a class="nav-list-link" href="/products">Products</a>
+            </div>
+            <div class="nav-buttons">
+                <a class="nav-list-link" href="/contact">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+    <!--Container with contact info and an email form, that will send the filled form to my email-->
+    <div id="email-container">
+        <div id="main-contact">
+            <h2>
+                Have a question? Ask us here!
+            </h2>
+        </div>
+        <div id="user-input">
+            <form method="post" action="mailto:0011testemail@gmail.com">
+                <input type="email" id="email" placeholder="Email">
+                <br>
+                <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <button id="send-email-btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!--The footer of the page-->
+    <footer>
+        <h6>Thanks for visiting! &copy;</h6>
+    </footer>
+</body>
+
+</html>
