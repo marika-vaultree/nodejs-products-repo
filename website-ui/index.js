@@ -1,8 +1,11 @@
 const express = require("express");
 const axios = require("axios");
+const path = require("path");
 const app = express();
-const port = 3001;
+const port = 3030;
 
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get("/", (req, res) => {
@@ -20,13 +23,19 @@ app.get("/about", (req, res) => {
 });
 
 
-app.get("/products", async (req, res) => {
-    let data = await axios.get('http://localhost:4040/api/products').then(resp => {
-        return resp.data;
-    });
+// app.get("/products", async (req, res) => {
+//     let data = await axios.get('http://localhost:4040/api/products').then(resp => {
+//         return resp.data;
+//     });
 
-    res.send(data)
+//     res.send(data)
+// });
+
+
+app.get("/products", (req, res) => {
+    res.sendFile(__dirname + '/products.html')
 });
+
 
 
 app.get("/contact", (req, res) => {
