@@ -1,0 +1,31 @@
+@mixin flexCentre ($direction, $color) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.6rem;
+    flex-direction: $direction;
+    background-color: $color;
+}
+
+
+
+.nav-bar-container {
+    @include flexCentre(row, $skyBlue);
+
+    color: $indigo;
+
+    .nav-buttons {
+        
+        margin: 4rem;
+
+        .nav-list-link {
+            
+            text-decoration: none;
+            color: $indigo;
+            font-family: Geneva, Verdana, Tahoma, sans-serif;
+            font-weight: bolder;
+            font-size: .9rem;
+            
+        }
+    }
+}

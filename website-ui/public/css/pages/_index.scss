@@ -1,0 +1,25 @@
+#centre-container {
+    // @include flexCentre(column, $lightBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    height: 39rem;
+
+    padding: 2rem;
+    background-color: $lightBlue;
+
+    #main-heading {
+        width: 200rem;
+        margin: 2rem;
+    }
+
+    #centre-content {
+        display: flex;
+        justify-content: center;
+        width: 200rem;
+        margin: 2rem;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,20 @@
+* {  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Variables
+@import './variables/colors';
+@import './variables/typography';
+
+// Animations
+@import './animation/navlinks';
+
+// Layouts
+@import './layout/nav';
+@import './layout/footer';
+
+// Pages
+@import './pages/index';
+@import './pages/about';

@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Geneva;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  color: #1B4965;
+}
+
+h2 {
+  font-family: Geneva;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: #1B4965;
+}
+
+h6 {
+  font-family: Geneva;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1rem;
+  color: #1B4965;
+}
+
+p {
+  font-family: Geneva;
+  font-size: medium;
+  line-height: 1.5rem;
+  color: #1B4965;
+}
+
+a {
+  background-image: linear-gradient(to right, #CAE9FF, #CAE9FF 50%, #1B4965 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a:before {
+  content: "";
+  background: #CAE9FF;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  background-position: 0;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+.nav-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.6rem;
+  flex-direction: row;
+  background-color: #5FA8D3;
+  color: #1B4965;
+}
+.nav-bar-container .nav-buttons {
+  margin: 4rem;
+}
+.nav-bar-container .nav-buttons .nav-list-link {
+  text-decoration: none;
+  color: #1B4965;
+  font-family: Geneva, Verdana, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  flex-direction: row;
+  background-color: #5FA8D3;
+}
+
+#centre-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 39rem;
+  padding: 2rem;
+  background-color: #CAE9FF;
+}
+#centre-container #main-heading {
+  width: 200rem;
+  margin: 2rem;
+}
+#centre-container #centre-content {
+  display: flex;
+  justify-content: center;
+  width: 200rem;
+  margin: 2rem;
+  text-align: justify;
+}
+
+#about-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#about-container #main-about {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 2rem 4rem;
+  margin-bottom: 1rem;
+  height: 10rem;
+}
+#about-container #about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0rem 4rem;
+  margin-bottom: 4rem;
+  text-align: justify;
+  background-color: aqua;
+}
+#about-container #about-content .p-about {
+  display: flex;
+  background-color: azure;
+  margin: 1rem;
+}/*# sourceMappingURL=main.css.map */
